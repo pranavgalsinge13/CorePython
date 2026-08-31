@@ -41,3 +41,12 @@ c=arr.array('d')
 
 c=a+b
 print("C=",c)
+
+# merging two arrays
+
+from array import *
+a=array('i',[1,2,3,4,5])
+b=array('i',[1,2,3,4,5])
+print(a)
+print(b)
+print("Addition of two array:",a+b)
