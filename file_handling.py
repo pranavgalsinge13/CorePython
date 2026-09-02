@@ -48,4 +48,11 @@ import os
 if os.path.exists("write.txt"):
     os.remove("write.txt")
 else:
-    print("")
+    print("The file does not exist")
+
+    
+
+# with statement
+with open("demo.txt","r") as f:
+    content=f.read();
+print(content)
