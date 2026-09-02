@@ -1,4 +1,4 @@
-import test_module;
+'''import test_module;
 name=input("what is your name?")
 test_module.show(name)
 
@@ -15,4 +15,12 @@ from calculation import addition
 a=int(input("Enter a"))
 b=int(input("Enter b"))
 
-print("Addition=",addition(a,b))
+print("Addition=",addition(a,b))'''
+
+# renaming a module
+
+import calculation as cal;
+a=int(input("Enter a"));
+b=int(input("Enter b"));
+
+print("Addition=",cal.addition(a,b))
