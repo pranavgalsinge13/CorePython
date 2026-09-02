@@ -15,4 +15,4 @@ from calculation import addition
 a=int(input("Enter a"))
 b=int(input("Enter b"))
 
-print("Addition=",addition(ab))
+print("Addition=",addition(a,b))
