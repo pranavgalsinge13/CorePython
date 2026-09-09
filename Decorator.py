@@ -20,7 +20,7 @@ def wish(name):
     print("Hello",name,"Good Morning")
 wish("Pranav")
 wish("Hitesh")
-wish("Yash")'''
+wish("Yash")
 
 # without using @decor
 
@@ -41,4 +41,22 @@ decorfunction=decor(wish)
 wish("Durga")
 wish("Sunny")
 decorfunction("Durga")
-decorfunction("Sunny")
+decorfunction("Sunny")'''
+
+def decor (func):
+    def inner(a,b):
+        c=int(input("Enter Third Number:"))
+        func (a,b,c)
+    return inner
+
+@decor
+def add(a,b,c):
+   result=a+b+c
+   print(result)
+   return result
+
+
+a=int(input("Enter First Number:"))
+b=int(input("Enter Second Number:"))
+
+add(a,b)
