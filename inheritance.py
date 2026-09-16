@@ -1,4 +1,15 @@
 # Inheritance
+#
+# Inheritance lets a child (derived) class reuse and extend the attributes
+# and methods of a parent (base) class. It represents an "is-a" relationship.
+#
+# Syntax:
+# class Child(Parent):
+#     pass
+#
+# A child class automatically receives accessible members from its parent and
+# can add new methods or override inherited methods. Python also supports
+# single, multilevel, multiple, hierarchical, and hybrid inheritance.
 
 # - Code reusability
 # - create a new class child calss (derived class) using existing class (parent class, base class)
