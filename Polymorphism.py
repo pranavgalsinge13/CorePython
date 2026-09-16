@@ -75,7 +75,7 @@ class C(P):
 
 c=C()
 c.property()
-c.marry()'''
+c.marry()
 
 # from overriding method of child class, we can call parent class method using super() function:
 
@@ -91,4 +91,35 @@ class C(P):
 
 c=C()
 c.property()
-c.marry()
+c.marry()'''
+
+# constructor overriding
+#
+# Constructor overriding occurs when a child class defines its own __init__()
+# method instead of using the parent class's constructor. The child constructor
+# can initialize its additional attributes and call super().__init__() to reuse
+# the parent constructor's initialization. Here, Person initializes name and
+# age, while Employee adds eno and esal.
+
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+class Employee(Person):
+    def __init__(self,name,age,eno,esal):
+        super().__init__(name,age)
+        self.eno=eno
+        self.esal=esal
+
+    def display(self):
+        print("Employee Name:",self.name)
+        print("Employee Age:",self.age)
+        print("Employee Number:",self.eno)
+        print("Employee Salary:",self.esal)
+
+e1=Employee('Pranav',20,101,50000)
+e1.display()
+
+e2=Employee('Yash',23,102,60000)
+e2.display()
