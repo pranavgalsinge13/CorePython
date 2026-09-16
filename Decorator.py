@@ -1,8 +1,14 @@
 # Function Decorators
+# A decorator is a function that extends another function without changing
+# its original code. The @decorator syntax is shorthand for:
+#     add = decor(add)
+# Here, decor wraps add in inner, which collects the third number and then
+# calls the original add function with all three arguments.
 
 # normal function ---> Decorator ---> Extended function
 
 # @decor is used to call the decor function
+
 
 
 
