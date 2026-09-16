@@ -1,4 +1,14 @@
-# oops in python
+# Object-oriented programming (OOP) organizes code using classes and objects.
+#
+# Key OOP concepts demonstrated below:
+# - Class: a blueprint that defines data and behavior.
+# - Object: an instance created from a class (s1 and s2).
+# - Encapsulation: an object's data and methods are grouped together.
+# - Constructor: __init__ initializes each object's attributes.
+# - self: refers to the current object.
+# - Method: display() defines behavior for Student objects.
+# - Inheritance and polymorphism are other OOP concepts; they are not needed
+#   in this basic example.
 
 '''class student:
     def __init__(self):
