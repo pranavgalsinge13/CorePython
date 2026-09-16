@@ -42,3 +42,4 @@ s1=student("Pranav",20,90)
 s2=student("Yash",23,95)
 s1.display()
 s2.display()
+
